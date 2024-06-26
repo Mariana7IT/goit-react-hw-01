@@ -1,4 +1,4 @@
-const TransactionHistory = {id, type, amount, currency} => {
+const TransactionHistory = ({id, type, amount, currency}) => {
 
   return (
    <table>
