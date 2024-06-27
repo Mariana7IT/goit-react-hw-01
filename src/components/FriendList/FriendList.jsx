@@ -2,7 +2,7 @@ const FriendListItem = ({ avatar, name, isOnline, id }) => {
   return (
     <li key={id}>
       <div>
-        <img src={avatar} alt="Avatar" width="48" />
+        <img src={avatar} alt="Avatar" />
         <p>{name}</p>
         <p>{isOnline ? 'Online' : 'Offline'}</p>
       </div>
