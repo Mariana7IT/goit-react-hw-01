@@ -8,7 +8,7 @@ const FriendListItem = ({ avatar, name, isOnline, id }) => {
         <p className={s.nameFriend}>{name}</p>
          <p className={isOnline ? s.friendOnline : s.friendOffline}>
           {isOnline ? 'Online' : 'Offline'}
-             </p>
+        </p>
       </div>
     </li>
   );

@@ -37,7 +37,7 @@ font-weight: bold;
 color: black;
 }
 
-friendOnline {
+.friendOnline {
     margin-top: 4px;
     color: green; 
 }
