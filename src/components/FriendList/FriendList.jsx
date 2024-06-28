@@ -2,11 +2,11 @@ import s from './FriendList.module.css'
 
 const FriendListItem = ({ avatar, name, isOnline, id }) => {
   return (
-    <li key={id}>
-      <div>
-        <img src={avatar} alt="Avatar" />
-        <p>{name}</p>
-        <p>{isOnline ? 'Online' : 'Offline'}</p>
+    <li className={s.friendListItem} key={id}>
+      <div className={s.friend}>
+        <img className={s.friendImage} src={avatar} alt="Avatar" />
+        <p className={s.nameFriend}>{name}</p>
+        <p className={s.friendOnline}>{isOnline ? 'Online' : 'Offline'}</p>
       </div>
     </li>
   );
@@ -14,8 +14,8 @@ const FriendListItem = ({ avatar, name, isOnline, id }) => {
 
 const FriendList = ({ friends }) => {
   return (
-    <ul>
-      {friends.map(friend => (
+    <ul className={s.friendList}>
+      {friends.map((friend) => (
         <FriendListItem 
           key={friend.id}
           avatar={friend.avatar}
