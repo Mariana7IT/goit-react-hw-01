@@ -6,16 +6,13 @@ justify-content: center;
 column-gap: 60px; 
 align-items: center;
 flex-wrap: wrap; 
-
 }
-
 
 .friendListItem{
 display: flex;
 justify-content: center;
 width: 60px;
 height: 200px;
-
 }
 
 .friend{
@@ -38,4 +35,14 @@ height: 80px;
 margin-top: 8px;
 font-weight: bold;
 color: black;
+}
+
+friendOnline {
+    margin-top: 4px;
+    color: green; 
+}
+
+.friendOffline {
+    margin-top: 4px;
+    color: red;
 }
