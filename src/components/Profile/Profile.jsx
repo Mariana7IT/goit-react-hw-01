@@ -1,33 +1,31 @@
-const Profile = ({name, tag, location, image, stats}) => {
+import s from './Profile.module.css'
+
+const Profile = ({ name, tag, location, image, stats }) => {
 
   return (
-    <div>
+    <div className={s.profile}>
   
-  <div>
-        <img
-          src={image}
-          alt="User avatar"
-        />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
-      </div>
+  <div className={s.description}>
+        <img className={s.avatar} src={image} alt="User avatar"/>
+        <p className={s.titleName}>{name}</p>
+        <p className={s.title}>@{tag}</p>
+        <p className={s.title}>{location}</p>
+  </div>
   
-
-    <ul>
-        <li>
-          <span>Followers</span>
-          <span>{stats.followers}</span>
+    <ul className={s.stats}>
+        <li className={s.statsItem}>
+          <span className={s.statsTitle}>Followers</span>
+          <span className={s.statsTitleElement}>{stats.followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>{stats.views}</span>
+        <li className={s.statsItem}>
+          <span className={s.statsTitle}>Views</span>
+          <span className={s.statsTitleElement}>{stats.views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>{stats.likes}</span>
+        <li className={s.statsItem}>
+          <span className={s.statsTitle}>Likes</span>
+          <span className={s.statsTitleElement}>{stats.likes}</span>
         </li>
-      </ul>
+    </ul>
 </div>
   );
 };

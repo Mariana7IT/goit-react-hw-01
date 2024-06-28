@@ -1,4 +1,6 @@
-const TransactionHistory = ({id, type, amount, currency}) => {
+import s from './TransactionHistory.module.css'
+
+const TransactionHistory = ({ id, type, amount, currency }) => {
 
   return (
    <table>

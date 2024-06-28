@@ -1,3 +1,5 @@
+import s from './FriendList.module.css'
+
 const FriendListItem = ({ avatar, name, isOnline, id }) => {
   return (
     <li key={id}>
