@@ -1,13 +1,4 @@
 
-.friendList{
-margin-top: 24px;
-display: flex;
-justify-content: center;
-column-gap: 60px; 
-align-items: center;
-flex-wrap: wrap; 
-}
-
 .friendListItem{
 display: flex;
 justify-content: center;
